@@ -3,8 +3,6 @@ name: Create Release Package
 
 # Define the triggers for this workflow
 on:
-  workflow_dispatch:
-  pull_request:
   push:
     tags:
       - "v*.*.*"
