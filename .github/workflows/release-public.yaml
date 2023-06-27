@@ -50,9 +50,9 @@ jobs:
     - name: Build & Publish
       run: dotnet build ./FmuImporter/BuildAll/Build.csproj -v:m
     - name: Release
-        uses: softprops/action-gh-release@v1        
-        with:
-          prerelease: true
-          draft: true
-          files: |
-            _publish/SilKitFmuImporter-*-xPlatform-x64.zip
+      uses: softprops/action-gh-release@v1        
+      with:
+        prerelease: true
+        draft: true
+        files: |
+          _publish/SilKitFmuImporter-*-xPlatform-x64.zip
